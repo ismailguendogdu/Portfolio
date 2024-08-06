@@ -55,7 +55,7 @@ section {
             }
 
             & > div:last-child {
-                margin-left: auto;
+                margin-left: 0;
                 text-align: right;
             }
         }
@@ -103,11 +103,11 @@ section {
             }
 
             &:hover .btnText {
-                animation: scroll-left 10s linear infinite;
+                animation: scroll-left 1s linear infinite;
             }
 
             .btnText {
-                display: inline-block;
+                display: block;
                 position: relative;
                 white-space: nowrap;
             }
