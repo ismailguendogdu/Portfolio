@@ -1,0 +1,117 @@
+body {
+    font-family: 'Fira code';
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    max-width: 1200px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.greenText {
+    color: rgba(61, 207, 182, 1);
+}
+
+.left, .right {
+    flex: 1;
+    padding: 20px;
+}
+
+.left h1 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    font-family: 'Karla';
+}
+
+.left h2 {
+    font-size: 4rem;
+    font-weight: 700;
+    font-family: 'Karla';
+    margin-bottom: 10px;
+}
+
+.left h1, .left h2 {
+    margin: 0;
+    color: rgba(61, 207, 182, 1);
+}
+
+.left p {
+    margin: 10px 0;
+    color: #fff;
+}
+
+.btn, .icon-btn {
+    display: block;
+    margin: 10px 0;
+    padding: 10px;
+    background-color: #555;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.icon-btn {
+    width: 50px;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin: 10px 0 5px;
+    color: rgba(106, 215, 191, 1);
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+input, textarea {
+    font-family: 'Karla';
+    font-size: 1.25rem;
+    font-weight: 400;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    background: none;
+    border-bottom: solid thin #00ffaa; 
+    color: rgba(255, 255, 255, 0.8); 
+    outline: none; 
+}
+
+input::placeholder, textarea::placeholder {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+input:focus, textarea:focus {
+    border-bottom-color: rgba(106, 215, 191, 1);
+}
+
+textarea {
+    resize: none;
+}
+
+.submit-btn {
+    width: 8rem; 
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 5px;
+    cursor: pointer;
+    background: none; 
+    color: #fff; 
+    text-align: center;
+}
+
+.submit-btn:hover {
+    border-color: rgba(106, 215, 191, 1); 
+    color: rgba(106, 215, 191, 1); 
+}

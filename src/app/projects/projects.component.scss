@@ -1,0 +1,31 @@
+.portfolio {
+    // background-color: #0a0a0a;
+    color: #ffffff;
+    padding: 20px;
+  }
+  
+  .portfolio h1 {
+    font-size: 1.5rem;
+  }
+
+  .portfolio h2 {
+    font-size: 4rem;
+  }
+
+  .portfolio h1,
+  .portfolio h2 {
+    border-bottom: solid thin #00ffaa;
+    padding-bottom: 10px;
+    font-weight: 700;
+  }
+  
+  .project {
+    border-bottom: solid thin #00ffaa;
+    margin-top: 20px;
+    padding-bottom: 10px;
+  }
+  
+  .project p {
+    color: #00ffaa;
+  }
+  

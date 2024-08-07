@@ -1,1 +1,30 @@
-<p>contact-me works!</p>
+<div class="container">
+    <div class="left">
+      <h1>Contact me</h1>
+      <h2>Let's work together</h2>
+      <p>Got a problem to solve?</p>
+      <p>Contact me through this form, I am interested in hearing from you, knowing your ideas and contributing to your projects with my work.</p>
+      <p>Need a Frontend Developer? <span class="greenText">Let´s talk</span></p>
+
+    </div>
+    <div class="right">
+      <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+        <label for="name">What's your name?</label>
+        <input type="text" id="name" formControlName="name" placeholder="Your name goes here">
+        
+        <label for="email">What's your email?</label>
+        <input type="email" id="email" formControlName="email" placeholder="youremail@email.com">
+        
+        <label for="message">How can I help you?</label>
+        <textarea id="message" formControlName="message" placeholder="Hello Ismail, I am interested in..."></textarea>
+        
+        <label>
+          <input type="checkbox" formControlName="privacy">
+          I've read the privacy policy and agree to the processing of my data as outlined.
+        </label>
+        
+        <button type="submit" class="submit-btn">Say Hello :)</button>
+      </form>
+    </div>
+  </div>
+  

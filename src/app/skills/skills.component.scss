@@ -118,7 +118,7 @@ section {
 }
 
 .icon img {
-    max-width: 50px;
+    max-width: 60px;
     margin-bottom: 0.5rem;
 }
 
@@ -126,4 +126,8 @@ section {
     font-family: 'Fira Code';
     font-size: 0.875rem;
     color: #ffffff;
+}
+
+.icon img:hover {
+    transform: scale(1.2);
 }

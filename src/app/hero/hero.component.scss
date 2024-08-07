@@ -3,7 +3,7 @@ section {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-image: linear-gradient( rgba(28, 28, 28, 1), rgba(8, 70, 59, 1));
+    // background-image: linear-gradient( rgba(28, 28, 28, 1), rgba(8, 70, 59, 1));
 
     header {
         div {
@@ -149,21 +149,34 @@ section {
     position: absolute;
     width: 170px;
     height: 22px;
-    rotate: -90deg;
-    border: 1px solid;
-    top: 45rem;
+    transform: rotate(-90deg);
+    top: 50%;
     right: 5rem;
+    transform: translateY(-50%);
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(61, 207, 182, 1);
+    color: white;
+}
+
+.rightLateral .line {
+    height: 240px;
+    border: 1px solid rgba(61, 207, 182, 1);
+    margin-top: 1rem;
 }
 
 .leftLateral {
     display: flex;
     position: absolute;
     flex-direction: column;
-    top: 32rem;
+    top: 50%;
     left: 3rem;
+    transform: translateY(-50%);
+    align-items: center;
+}
 
-    .line {
-        height: 240px;
-        border: 1px solid rgba(61, 207, 182, 1);
-    }
+.leftLateral .line {
+    height: 240px;
+    border: 1px solid rgba(61, 207, 182, 1);
+    margin-top: 1rem;
 }
