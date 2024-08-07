@@ -1,14 +1,129 @@
+body {
+    font-family: 'Karla', sans-serif;
+    color: white;
+    // background-color: radial gradiant  rgba(101, 199, 183, 0.1);
+    background: radial-gradient(22.43% 43.85% 1.22% 52.45%, rgba(8, 70, 59, 0.3) 0%, #1C1C1C 100%);
+    padding: 3rem;
+    box-sizing: border-box;
+    margin: 0;
+}
 
+section {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 2rem;
+    margin-top: 6rem;
+}
 
+.skillSet {
+    max-width: 520px;
+}
+
+.skillSet header {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #3dcfb6;
+}
 
 .skillSetBox {
     display: flex;
     flex-direction: column;
-    width: 32.5rem;
-    height: 34.5;
+    width: 100%;
     border: 1px solid rgba(61, 207, 182, 1);
     padding: 2rem;
     border-radius: 30px;
     gap: 20px;
+    background-color: rgba(101, 199, 183, 0.1);
+}
+
+.skillSetBox h1 {
+    font-family: 'Fira Code';
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #3dcfb6;
+}
+
+.skillSetBox h2 {
+    font-family: 'Fira Code';
+    font-size: 1.5rem;
+    margin-top: 2rem;
+    color: #3dcfb6;
+}
+
+.white {
     color: white;
+}
+
+.skillSetBox p {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #ffffff;
+}
+
+.skillSetBox > span {
+    width: 9rem;
+    border: 1px solid white;
+    border-radius: 100px;
+    padding: 12px 24px;
+    display: flex; 
+    align-items: center;
+    justify-content: center; 
+    position: relative;
+    overflow: hidden;
+    white-space: nowrap;
+    transition: border-color 0.3s, color 0.3s;
+    color: #ffffff;
+
+    &:hover {
+        border-color: rgba(106, 215, 191, 1);
+        color: rgba(106, 215, 191, 1);
+    }
+
+    &:hover .btnText {
+        animation: scroll-left 2s linear infinite;
+    }
+
+    .btnText {
+        display: block;
+        position: relative;
+        white-space: nowrap;
+    }
+}
+
+@keyframes scroll-left {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.skillIcons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2.5rem;
+}
+
+.icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100px;
+    text-align: center;
+}
+
+.icon img {
+    max-width: 50px;
+    margin-bottom: 0.5rem;
+}
+
+.icon span {
+    font-family: 'Fira Code';
+    font-size: 0.875rem;
+    color: #ffffff;
 }
