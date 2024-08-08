@@ -1,0 +1,32 @@
+section {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+
+
+.footerLeft p {
+    gap: 0.5rem;
+    color: white;
+}
+
+.name p {
+    font-size: 1.2rem;
+    font-family: 'Fira code';
+    color: rgba(61, 207, 182, 1);
+}
+
+.footerLink {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+
+    >a {
+        text-decoration: none;
+        font-family: 'Karla';
+        font-size: 1rem;
+        font-weight: 400;
+        color: white;
+    }
+}
+
