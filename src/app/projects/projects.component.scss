@@ -1,31 +1,140 @@
 .portfolio {
-    // background-color: #0a0a0a;
-    color: #ffffff;
-    padding: 20px;
-  }
-  
-  .portfolio h1 {
-    font-size: 1.5rem;
-  }
+  color: #ffffff;
+  padding: 1.25rem;
+}
 
-  .portfolio h2 {
-    font-size: 4rem;
-  }
+.portfolio h1 {
+  font-size: 1.5rem;
+}
 
-  .portfolio h1,
-  .portfolio h2 {
-    border-bottom: solid thin #00ffaa;
-    padding-bottom: 10px;
-    font-weight: 700;
-  }
-  
-  .project {
-    border-bottom: solid thin #00ffaa;
-    margin-top: 20px;
-    padding-bottom: 10px;
-  }
-  
-  .project p {
-    color: #00ffaa;
-  }
-  
+.portfolio h2 {
+  font-size: 4rem;
+}
+
+.portfolio h1,
+.portfolio h2 {
+  padding-bottom: 0.625rem;
+  font-weight: 700;
+}
+
+
+.projectContainer {
+  width: 55rem;
+  height: 20.5rem;
+  margin-top: 2.5rem;
+} 
+
+.project { 
+  border-top: 1px solid rgba(61, 207, 182, 1);
+  border-bottom: 1px solid rgba(61, 207, 182, 1);
+  position: relative;
+}
+
+.projectContent {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2.5rem 2rem;
+  transition: background-color 0.2s ease;
+}
+
+.projectContent:hover {
+  background-color: rgb(40, 129, 114);
+}
+
+.separator {
+  color: rgba(61, 207, 182, 1);
+}
+
+.projectContent h3 {
+  font-family: 'Fira code';
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 0;
+  color: white;
+}
+
+.projectContent p {
+  font-family: 'Karla';
+  font-size: 1.125rem;
+  font-weight: 400;
+  color: white;
+}
+
+.popup {
+  display: none; /* Verstecke das Popup standardmäßig */
+  position: absolute;
+  top: 0;
+  right: -20rem; /* Positioniere das Popup rechts vom Projekt */
+  z-index: 10; /* Stelle sicher, dass das Popup über anderen Elementen liegt */
+}
+
+.project:hover .popup {
+  display: block; /* Zeige das Popup beim Hover */
+}
+
+// .project {
+//   padding: 1rem 0;
+//   position: relative;
+//   overflow: hidden;
+//   background-color: transparent;
+//   width: 80%;
+//   transition: background-color 0.3s ease;
+// }
+
+// .project-content {
+//   display: flex;
+//   justify-content: space-between;
+//   align-items: center;
+//   width: 100%;
+//   position: relative;
+//   z-index: 2;
+//   padding: 0; 
+// }
+
+// .project::before {
+//   content: "";
+//   position: absolute;
+//   top: 0;
+//   width: 100%; 
+//   height: 100%;
+//   background-color: #2b5959;
+//   z-index: 1;
+//   transition: opacity 0.3s ease;
+//   opacity: 0;
+// }
+
+// .project::after {
+//   content: "";
+//   display: block;
+//   width: 100%; 
+//   height: 1px;
+//   background-color: #00ffaa;
+//   position: absolute;
+//   bottom: 0;
+// }
+
+// .project:hover::before {
+//   opacity: 1;
+// }
+
+// .project h3 {
+//   margin: 0;
+//   font-size: 2rem;
+//   font-weight: 700;
+//   transition: color 0.3s ease;
+//   padding-left: 1rem;
+// }
+
+// .project p {
+//   margin: 0;
+//   font-size: 1.125rem;
+//   font-weight: 400;
+//   transition: color 0.3s ease;
+//   padding-right: 1rem;
+// }
+
+// .project:hover h3,
+// .project:hover p {
+//   color: #ffffff;
+// }

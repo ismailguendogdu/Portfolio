@@ -12,7 +12,6 @@ import { FormsModule, NgForm } from '@angular/forms';
 })
 export class ContactMeComponent {
 
-
   http = inject(HttpClient);
   
   contactData = {
@@ -55,13 +54,10 @@ onSubmit(ngForm: NgForm) {
 
 }
 
-
-
-
-
-  // onSubmit(ngForm: NgForm) {
+  // onsubmit(ngForm: NgForm) {
+  //  console.log(NgForm);
    
-  //   if (ngForm.valid && ngForm.submitted) {
+  //   if (NgForm.valid && NgForm.submitted) {
   //     console.log(this.contactData)
   //   } 
   // }
