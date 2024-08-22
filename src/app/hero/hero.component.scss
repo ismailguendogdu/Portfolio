@@ -14,21 +14,21 @@ section {
             color: white;
             font-size: 1.25rem;
             font-weight: 400;
-
+    
             & > div:first-child {
                 display: flex;
                 align-items: center;
                 gap: 1.5rem;
-
+    
                 img {
                     height: 1.5rem;
                 }
-
+    
                 a {
                     text-decoration: none;
                     color: white;
                     position: relative;
-
+    
                     &::after {
                         content: '';
                         display: block;
@@ -37,29 +37,27 @@ section {
                         border-radius: 50%;
                         background: white;
                         position: absolute;
-                        bottom: -0.38rem;
+                        bottom: -0.5rem;
                         left: 50%;
                         transform: translateX(-50%);
-                        transition: width 0.3s, height 0.3s;
+                        transition: width 0.3s, height 0.3s, background-color 0.3s;
                     }
-
-                    &:hover {
-                        color: rgba(106, 215, 191, 1);
-
-                        &::after {
-                            width: 0.38rem;
-                            height: 0.38rem;
-                        }
+    
+                    &:hover::after {
+                        background-color: rgba(106, 215, 191, 1); 
+                        width: 0.38rem;
+                        height: 0.38rem;
                     }
                 }
             }
-
+    
             & > div:last-child {
                 margin-left: 0;
                 text-align: right;
             }
         }
     }
+    
 }
 
 .title {
@@ -125,7 +123,6 @@ section {
 }
 
 .crossLoop {
-    padding: 0.75rem 2rem 0.75rem 2rem;
     background-color: rgba(255, 255, 255, 0.12);
     border: 1px solid;
     position: absolute;
@@ -133,13 +130,37 @@ section {
     top: 45rem;
     left: -1rem;
     rotate: -3deg;
+    overflow: hidden;
+    box-sizing: border-box;
+    line-height: .5;
     
-    >ul {
-    display: flex;
-    gap: 2.5rem;
-    color: rgba(61, 207, 182, 1);
+    > ul {
+        display: flex;
+        gap: 2.5rem;
+        font-size: 2rem;
+        color: rgba(61, 207, 182, 1);
+        white-space: nowrap;
+        width: max-content;
+        animation: scroll-left 10s linear infinite; 
+    }
+
+    @keyframes scroll-left {
+        0% {
+            transform: translateX(100);
+        }
+        100% {
+            transform: translateX(-100%);
+        }
     }
 }
+
+.crossLoop ul li {
+    margin: 0; 
+    padding: 0 3rem; 
+    list-style: disc outside none; 
+}
+
+
 
 .rightLateral {
     display: flex;

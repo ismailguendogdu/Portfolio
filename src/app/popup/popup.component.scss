@@ -1,8 +1,8 @@
-.projectContainer {
+.projectJoin, .projectElp {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 4rem;
+    padding: 1rem 2rem 6rem 1rem;
     background-image: linear-gradient(to right, rgba(28, 28, 28, 1), 
       rgba(8, 70, 59, 1));
     color: #fff; 
@@ -99,7 +99,6 @@
   .button:hover img {
     transform: translate(5px, -5px);
   }
-  
   
   .projectImage {
     max-width: 80%;
