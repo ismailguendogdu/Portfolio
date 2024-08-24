@@ -6,7 +6,7 @@ body {
     height: 100%;
     background-image: linear-gradient(rgba(28, 28, 28, 1), rgba(8, 70, 59, 1));
     overflow-x: hidden;
-    
+
 }
 
 section {
@@ -15,28 +15,25 @@ section {
     align-items: flex-start;
     margin: 0 auto;
     padding: 2rem;
-    max-width: 1400px; 
+    max-width: 1400px;
     width: 100%;
     gap: 5rem;
-    margin-top: 4rem; 
+    margin-top: 4rem;
     font-family: 'Fira Code';
 }
 
-.portfolioImage {
-    margin-top: 15rem; 
-}
+.portfolioImage {}
 
 .portfolioImage img {
     border-radius: 30px;
 }
 
 .aboutMe {
-    display: flex;
-    flex-direction: column;
+    margin-top: 15%;
 }
 
 .aboutMe header {
-    margin-bottom: 1rem; 
+    margin-bottom: 1rem;
     font-size: 1.5rem;
     font-weight: 500;
     color: rgba(61, 207, 182, 1);
@@ -45,13 +42,13 @@ section {
 .aboutMeBox {
     display: flex;
     flex-direction: column;
-    width: 35.5rem;
+    width: 100%;
     border: 1px solid rgba(61, 207, 182, 1);
     padding: 2rem;
     border-radius: 30px;
     gap: 20px;
-    color: white;
     background-color: rgba(101, 199, 183, 0.1);
+    color: white;
 }
 
 
@@ -71,7 +68,7 @@ section {
 }
 
 .aboutMeBox img {
-    width: 24px; 
+    width: 24px;
     height: 24px;
     display: inline-block;
     vertical-align: middle;

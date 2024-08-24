@@ -1,0 +1,11 @@
+{
+    "hero": {
+        "aboutMe": "About Me",
+        "skills": "Skills"
+    },
+    "aboutMe": {
+        "whoAmI": "Who Am I",
+        "aboutMe": "About Me",
+        "entry": "Hi, I´m a german speaking Frontend Developer based in Oberhausen. Motivatrd by the limitless oppurtunities within IT, I am excited about crafting visually captivating and intuitive websites and applications."
+    }
+}

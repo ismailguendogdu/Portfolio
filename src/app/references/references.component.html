@@ -1,35 +1,24 @@
 <section>
-<h1>What my colleagues say about me</h1>
-<div class="carousel-container">
-  <div class="slideshow-container">
-    <div class="carousel-slide">
-      <div class="text-container">
-        <p>"It was a pleasure to work with Ismail. He always kept a positive and constructive atmosphere and spared no effort to make our project a success."</p>
-        <div class="author">Robin S. - Team Partner</div>
+  <h1>What my colleagues say about me</h1>
+  <div class="carousel-container">
+    <div class="slideshow-container">
+
+      @for(reference of references; track reference.author){
+      <div class="carousel-slide">
+        <div class="text-container">
+          <p>{{reference.content}}</p>
+          <div class="author">{{reference.author}}</div>
+        </div>
       </div>
+      }
     </div>
 
-    <div class="carousel-slide">
-      <div class="text-container">
-        <p>"I had the good fortune of working with Lukas in a group project at the Developer Akademie that involved a lot of effort. He always stayed calm, cool, and focused, and made sure our team was set up for success. He's super knowledgeable, easy to work with, and I'd happily work with him again given the chance."</p>
-        <div class="author">A. Fischer - Team Partner</div>
-      </div>
-    </div>
-
-    <div class="carousel-slide">
-      <div class="text-container">
-        <p>"Our project benefited enormously from Lukas's way of working."</p>
-        <div class="author">H. Janisch - Team Partner</div>
-      </div>
+    <div class="dot-container">
+      <a class="prev" (click)="plusSlides(-1)">&#10094;</a>
+      <span class="dot" (click)="currentSlide(1)"></span>
+      <span class="dot" (click)="currentSlide(2)"></span>
+      <span class="dot" (click)="currentSlide(3)"></span>
+      <a class="next" (click)="plusSlides(1)">&#10095;</a>
     </div>
   </div>
-
-  <div class="dot-container">
-    <a class="prev" (click)="plusSlides(-1)">&#10094;</a>
-    <span class="dot" (click)="currentSlide(1)"></span>
-    <span class="dot" (click)="currentSlide(2)"></span>
-    <span class="dot" (click)="currentSlide(3)"></span>
-    <a class="next" (click)="plusSlides(1)">&#10095;</a>
-  </div>
-</div>
 </section>

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Reference } from '../types/reference';
 
 @Component({
   selector: 'app-references',
@@ -9,6 +10,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ReferencesComponent implements OnInit {
   slideIndex = 1;
+  references: Array<Reference> = [
+    {author:"Robin S. - Team Partner",content:'"It was a pleasure to work with Ismail. He always kept a positive and constructive atmosphere and spared no effort to make our project a success."'},
+    {author: "A. Fischer - Team Partner", content:`"I had the good fortune of working with Lukas in a group project at the Developer Akademie that involved a lot of effort. He always stayed calm, cool, and focused, and made sure our team was set up for success. He's super knowledgeable, easy to work with, and I'd happily work with him again given the chance."`},
+    {author:"H. Janisch - Team Partner",content:`"Our project benefited enormously from Lukas's way of working."`}
+  ];
 
   plusSlides(n: number) {
     this.showSlides(this.slideIndex += n);

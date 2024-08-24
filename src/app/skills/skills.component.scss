@@ -1,11 +1,17 @@
 body {
     font-family: 'Karla', sans-serif;
     color: white;
-    // background-color: radial gradiant  rgba(101, 199, 183, 0.1);
     background: radial-gradient(22.43% 43.85% 1.22% 52.45%, rgba(8, 70, 59, 0.3) 0%, #1C1C1C 100%);
     padding: 3rem;
     box-sizing: border-box;
     margin: 0;
+}
+
+@media (max-width: 932px) {
+    .skillIcons {
+        width: 100%;
+        height: auto;
+    }
 }
 
 section {
@@ -38,14 +44,14 @@ section {
 }
 
 .skillSetBox h1 {
-    font-family: 'Fira Code';
-    font-size: 2rem;
+    font-family: 'FiraCode-Bold', sans-serif;
+    font-size: 4rem;
     margin-bottom: 1rem;
     color: #3dcfb6;
 }
 
 .skillSetBox h2 {
-    font-family: 'Fira Code';
+    font-family: 'Fira Code', sans-serif;
     font-size: 1.5rem;
     margin-top: 2rem;
     color: #3dcfb6;
@@ -61,14 +67,14 @@ section {
     color: #ffffff;
 }
 
-.skillSetBox > span {
+.skillSetBox>span {
     width: 9rem;
     border: 1px solid white;
     border-radius: 100px;
     padding: 12px 24px;
-    display: flex; 
+    display: flex;
     align-items: center;
-    justify-content: center; 
+    justify-content: center;
     position: relative;
     overflow: hidden;
     white-space: nowrap;
@@ -95,6 +101,7 @@ section {
     0% {
         transform: translateX(0);
     }
+
     100% {
         transform: translateX(-100%);
     }

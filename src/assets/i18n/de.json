@@ -1,0 +1,11 @@
+{
+    "hero": {
+        "aboutMe": "İsmail",
+        "skills": "Skills"
+    },
+    "aboutMe": {
+        "whoAmI": "Who Am I",
+        "aboutMe": "About Me",
+        "entry": "Hallo, ich bin ein deutschsprachiger Frontend-Entwickler mit Sitz in Oberhausen. Motiviert durch die grenzenlosen Möglichkeiten in der IT bin ich begeistert von der Gestaltung visuell ansprechender und intuitiver Websites und Anwendungen."
+    }
+}

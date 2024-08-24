@@ -13,6 +13,12 @@ import { FormsModule, NgForm } from '@angular/forms';
 export class ContactMeComponent {
 
   http = inject(HttpClient);
+  isFormValid = false;
+  touched = {
+    email: false,
+    name: false,
+    message:false
+  };
   
   contactData = {
     name: "",
@@ -33,7 +39,15 @@ post = {
   },
 };
 
+  getFieldIsValid(name: string, ngForm: NgForm):boolean{
+    if (!ngForm.form.controls[name].touched) {
+      return true;
+    }
+    return ngForm.form.controls[name].valid;
+  }
+
 onSubmit(ngForm: NgForm) {
+  this.isFormValid = ngForm.form.valid;
   if (ngForm.submitted && ngForm.form.valid && !this.mailTest) {
     this.http.post(this.post.endPoint, this.post.body(this.contactData))
       .subscribe({
@@ -47,17 +61,10 @@ onSubmit(ngForm: NgForm) {
         complete: () => console.info('send post complete'),
       });
   } else if (ngForm.submitted && ngForm.form.valid && this.mailTest) {
-
     ngForm.resetForm();
+  }else{
+    console.log(ngForm.errors);
   }
 }
 
 }
-
-  // onsubmit(ngForm: NgForm) {
-  //  console.log(NgForm);
-   
-  //   if (NgForm.valid && NgForm.submitted) {
-  //     console.log(this.contactData)
-  //   } 
-  // }
