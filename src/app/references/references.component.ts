@@ -1,10 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 import { Reference } from '../types/reference';
+import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-references',
   standalone: true,
-  imports: [],
+  imports: [TranslateModule],
   templateUrl: './references.component.html',
   styleUrl: './references.component.scss'
 })

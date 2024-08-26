@@ -1,11 +1,51 @@
 {
     "hero": {
-        "aboutMe": "İsmail",
-        "skills": "Skills"
+        "aboutMe": "Über mich",
+        "skills": "Fähigkeiten",
+        "projects":"Projekte",
+        "check":"Überprüfen Sie meine Arbeit",
+        "contactMe":"Kontaktieren Sie mich",
+        "remote":"Verfügbar für Remote-Arbeit",
+        "frontEnd":"Frontend Developer",
+        "based": "Verfügbar für Fernarbeit",
+        "work": "Offen für Arbeit"
     },
     "aboutMe": {
         "whoAmI": "Who Am I",
         "aboutMe": "About Me",
-        "entry": "Hallo, ich bin ein deutschsprachiger Frontend-Entwickler mit Sitz in Oberhausen. Motiviert durch die grenzenlosen Möglichkeiten in der IT bin ich begeistert von der Gestaltung visuell ansprechender und intuitiver Websites und Anwendungen."
+        "entry": "Hallo, ich bin ein deutschsprachiger Frontend-Entwickler mit Sitz in Oberhausen. Motiviert durch die grenzenlosen Möglichkeiten in der IT bin ich begeistert von der Gestaltung visuell ansprechender und intuitiver Websites und Anwendungen.",
+        "location": "Ich bin flexibel in Bezug auf die Arbeitsumgebung und kann sowohl vor Ort in Oberhausen als auch aus der Ferne effektiv arbeiten.",
+        "cognition": "Ich bin aufgeschlossen und immer auf der Suche nach persönlichen Herausforderungen, um meine Kenntnisse und Fähigkeiten ständig zu verbessern.",
+        "locationOn": "In meinem Beruf geht es beim Programmieren nicht nur um das Schreiben von Code: Es ist eine kreative Form der Problemlösung. Ich bin stolz auf meine Fähigkeit, komplexe technische Herausforderungen in einfache, benutzerfreundliche Lösungen zu destillieren. Auf diese Weise helfe ich Ihnen, Ihre Ziele zu erreichen und Ihre Vision zum Leben zu erwecken."
+    },
+    "skills": {
+        "technologies": "Technologien",
+        "skillSet": "Fähigkeiten",
+        "statement": "Auf meinem Weg habe ich an verschiedenen Projekten gearbeitet und dabei eine Reihe von Frontend-Technologien und Konzepten eingesetzt. Ich bin offen für neue Technologien und Methoden, um meine Fähigkeiten kontinuierlich zu verbessern und in der sich ständig weiterentwickelnden Landschaft der Webentwicklung vorne zu bleiben.",
+        "need": "Sie brauchen ",
+        "another": "eine weitere Fähigkeit?",
+        "statementP": "Nehmen Sie Kontakt mit mir auf. Ich freue mich darauf, mein bisheriges Wissen zu erweitern.",
+        "talk": "Lassen Sie uns reden"
+    },
+    "projects": {
+        "featured": "Ausgewählte Projekte"
+    },
+    "references": {
+        "colleagues": "Was meine Kollegen über mich sagen"
+    },
+    "contactMe": {
+        "h1": "Kontaktieren Sie mich",
+        "h2": "Lass uns zusammenarbeiten",
+        "question": "Haben Sie ein Problem zu lösen?",
+        "statementP": "Kontaktieren Sie mich über dieses Formular, ich bin interessiert daran, von Ihnen zu hören, Ihre Ideen kennenzulernen und mit meiner Arbeit zu Ihren Projekten beizutragen.",
+        "statementQ": "Brauchen Sie einen Frontend-Entwickler?",
+        "name": "Wie ist Ihr Name?",
+        "nameError": "Bitte geben Sie Ihren Namen ein",
+        "email": "Was ist Ihre E-Mail-Adresse?",
+        "emailError": "Bitte geben Sie Ihre E-Mail-Adresse ein",
+        "message": "Wie kann ich Ihnen helfen?",
+        "messageError": "Bitte geben Sie eine Nachricht ein",
+        "policyText": "Ich habe die Datenschutzbestimmungen gelesen und stimme der Verarbeitung meiner Daten wie beschrieben zu.",
+        "btnText": "Sag Hallo :)"
     }
 }
