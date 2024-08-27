@@ -5,7 +5,6 @@ section {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    // background-image: linear-gradient( rgba(28, 28, 28, 1), rgba(8, 70, 59, 1));
 
     header {
         div {
@@ -150,9 +149,10 @@ a {
     rotate: -3deg;
     overflow: hidden;
     box-sizing: border-box;
-    line-height: .5;
+    line-height: 1.5;
 
     >ul {
+        margin-top: 1%;
         display: flex;
         gap: 2.5rem;
         font-size: 2rem;
@@ -185,12 +185,8 @@ a {
     display: flex;
     position: absolute;
     flex-direction: column;
-    // width: 10.62rem;
-    // height: 1.38rem;
-    // transform: rotate(-90deg);
     bottom: 10rem;
     right: 5rem;
-    // transform: translateY(-50%);
     align-items: center;
     justify-content: center;
     color: white;
@@ -221,7 +217,6 @@ a {
     height: 11rem;
     border: 1px solid rgba(61, 207, 182, 1);
     margin-top: 1rem;
-    // rotate: -90deg;
     position: absolute;
     top: 4rem;
 }
@@ -240,4 +235,25 @@ a {
     height: 15rem;
     border: 1px solid rgba(61, 207, 182, 1);
     margin-top: 1rem;
+}
+
+@media (max-width: 768px) {
+    .title {
+        width: 50%;
+
+        >h4 {
+            font-size: 1.5rem;
+            margin: 0;
+        }
+
+        >h1 {
+            font-size: 4rem;
+            font-weight: 700;
+            margin: 0;
+        }
+    }
+
+    header {
+        display: none !important;
+    }
 }

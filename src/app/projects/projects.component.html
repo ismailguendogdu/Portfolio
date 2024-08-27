@@ -1,14 +1,24 @@
 <div id="projects" class="projectContainer">
   <h4>Portfolio</h4>
+  <ng-template #content let-c="close" let-d="dismiss" [size]="'xl'">
+    <div class="modal-header">
+      <button type="button" class="btn-close" aria-label="Close" (click)="d('Cross click')"></button>
+    </div>
+    <section class="modal-body projectJoin">
+      <app-popup (onNext)="onNext($event)" [project]="selectedProject" [index]="selectedIndex" />
+    </section>
+  </ng-template>
+
+
   <h1>{{"projects.featured" | translate}}</h1>
-  @for (project of projects; track $index) {
-  <div class="project">
+  @for (project of projects; track $index;) {
+  <div class="project" (click)="selectProject(project, $index)">
     <div class="popup">
       <img src="{{project.imageUrl}}" alt="Project 1 Image" class="popupImage">
     </div>
-    <div class="projectContent">
+    <div class="projectContent" (click)="open(content)">
       <h3>{{project.title}}</h3>
-      <p>{{project.technologies}}</p>
+      <p>{{project.technologiesLabel}}</p>
     </div>
   </div>
   }

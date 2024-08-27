@@ -90,3 +90,9 @@
   display: block;
   /* Zeige das Popup beim Hover */
 }
+
+.modal-show,
+.modal-content,
+.modal-dialog {
+  min-width: 120vh !important;
+}
