@@ -133,3 +133,12 @@ textarea {
     border-color: rgba(106, 215, 191, 1);
     color: rgba(106, 215, 191, 1);
 }
+
+
+@media (max-width: 768px) {
+    .container {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        }
+}

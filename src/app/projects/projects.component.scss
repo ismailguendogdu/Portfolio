@@ -33,9 +33,9 @@
 
 
 .projectContainer {
-  width: 55rem;
+  width: 48rem;
   height: 20.5rem;
-  margin-top: 2.5rem;
+  margin-top: 7rem;
 }
 
 .project {
@@ -95,4 +95,13 @@
 .modal-content,
 .modal-dialog {
   min-width: 120vh !important;
+}
+
+
+
+@media (max-width: 768px) {
+  .project:hover .popup {
+    display: none;
+  }
+  
 }

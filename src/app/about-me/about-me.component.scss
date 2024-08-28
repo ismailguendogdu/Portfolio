@@ -22,8 +22,6 @@ section {
     font-family: 'Fira Code';
 }
 
-.portfolioImage {}
-
 .portfolioImage img {
     border-radius: 30px;
 }
@@ -72,4 +70,13 @@ section {
     height: 24px;
     display: inline-block;
     vertical-align: middle;
+}
+
+
+@media (max-width: 768px) {
+    .row {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        }
 }
