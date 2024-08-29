@@ -29,11 +29,13 @@
   font-size: 4rem;
   margin-bottom: 1rem;
   color: #3dcfb6;
+  font-weight: 700;
+  width: 100%;
 }
 
 
 .projectContainer {
-  width: 48rem;
+  width: 70%;
   height: 20.5rem;
   margin-top: 7rem;
 }
@@ -46,9 +48,9 @@
 
 .projectContent {
   display: flex;
-  align-items: center;
+  align-items: baseline;
   justify-content: space-between;
-  padding: 2.5rem 2rem;
+  padding: 2.5rem 0.5rem;
   transition: background-color 0.2s ease;
 }
 
@@ -77,14 +79,12 @@
 
 .popup {
   display: none;
-  /* Verstecke das Popup standardmäßig */
   position: absolute;
   top: 0;
-  right: -20rem;
-  /* Positioniere das Popup rechts vom Projekt */
+  right: -46%;
+  width: 40%;
   z-index: 10;
-  /* Stelle sicher, dass das Popup über anderen Elementen liegt */
-}
+  }
 
 .project:hover .popup {
   display: block;
@@ -97,11 +97,33 @@
   min-width: 120vh !important;
 }
 
+.modal-body {
+  padding: 0;
+}
 
+.modal-content {
+  background-color: none !important;
+}
+
+.projectJoin {
+
+}
 
 @media (max-width: 768px) {
   .project:hover .popup {
     display: none;
   }
+
+  .projectContainer {
+    width: 100%;
+  }
   
+}
+
+
+@media (max-width: 600px) {
+  .projectContent {
+    flex-direction: column;
+    gap: 1rem;
+  }
 }
