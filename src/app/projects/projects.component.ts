@@ -1,8 +1,9 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { Project } from '../types/project';
 import { TranslateModule } from '@ngx-translate/core';
 import { NgbModal, NgbModalConfig } from '@ng-bootstrap/ng-bootstrap';
 import { PopupComponent } from "../popup/popup.component";
+import { TranslationService } from '../service/translation.service';
 
 @Component({
   selector: 'app-projects',
@@ -16,8 +17,10 @@ export class ProjectsComponent {
     {id:'01',
       imageUrl:'./assets/img/joinPopup.png',
       title:'Join',
-      technologiesLabel:'Angular | TypeScript | HTML | CSS | Firebase',
-       description:'Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.',
+      description: new Map<string, string>([
+        ["en", "Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories."],
+        ["de", "value2"]
+    ]),
        technologies:[
         {imageUrl:'./assets/img/iconOCSS.png',title:'CSS'},
         {imageUrl:'./assets/img/iconOHTML.png',title:'Html'},
@@ -31,8 +34,10 @@ export class ProjectsComponent {
     {id:'02',
       imageUrl:'./assets/img/elPopup.png',
       title:'El Pollo Loco',
-      technologiesLabel:'HTML | CSS | JavaScript',
-      description:'Jump,run and throw game based on object-oriented approach. Help Pepe to find coins and tabasco salsa to fight against the crazy hen.',
+      description:new Map<string, string>([
+        ["en", "Jump,run and throw game based on object-oriented approach. Help Pepe to find coins and tabasco salsa to fight against the crazy hen."],
+        ["de", "value2"]
+    ]),
       technologies:[
         {imageUrl:'./assets/img/iconOCSS.png',title:'CSS'},
         {imageUrl:'./assets/img/iconOHTML.png',title:'Html'},
@@ -44,7 +49,7 @@ export class ProjectsComponent {
   ];
   selectedProject: Project | null = null;
   selectedIndex = 0;
-
+  translationService = inject(TranslationService);
   constructor(
 		config: NgbModalConfig,
 		private modalService: NgbModal,

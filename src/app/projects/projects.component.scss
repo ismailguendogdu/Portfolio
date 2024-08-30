@@ -1,3 +1,9 @@
+section {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+}
+
 .portfolio {
   color: #ffffff;
   padding: 1.25rem;
@@ -44,6 +50,7 @@
   border-top: 1px solid rgba(61, 207, 182, 1);
   border-bottom: 1px solid rgba(61, 207, 182, 1);
   position: relative;
+  width: 70%;
 }
 
 .projectContent {
@@ -56,10 +63,6 @@
 
 .projectContent:hover {
   background-color: rgb(40, 129, 114);
-}
-
-.separator {
-  color: rgba(61, 207, 182, 1);
 }
 
 .projectContent h3 {
@@ -77,6 +80,10 @@
   color: white;
 }
 
+.projectContent span {
+  color: rgba(61, 207, 182, 1);
+}
+
 .popup {
   display: none;
   position: absolute;
@@ -84,30 +91,13 @@
   right: -46%;
   width: 40%;
   z-index: 10;
-  }
+}
 
 .project:hover .popup {
   display: block;
   /* Zeige das Popup beim Hover */
 }
 
-.modal-show,
-.modal-content,
-.modal-dialog {
-  min-width: 120vh !important;
-}
-
-.modal-body {
-  padding: 0;
-}
-
-.modal-content {
-  background-color: none !important;
-}
-
-.projectJoin {
-
-}
 
 @media (max-width: 768px) {
   .project:hover .popup {
@@ -117,7 +107,6 @@
   .projectContainer {
     width: 100%;
   }
-  
 }
 
 
@@ -126,4 +115,44 @@
     flex-direction: column;
     gap: 1rem;
   }
+}
+
+
+.btn-close {
+  position: absolute;
+  border: none;
+  opacity: 1;
+  color: #fff !important;
+  background: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath d='M.293.293a1 1 0 0 1 1.414 0L8 6.586 14.293.293a1 1 0 1 1 1.414 1.414L9.414 8l6.293 6.293a1 1 0 0 1-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 0 1-1.414-1.414L6.586 8 .293 1.707a1 1 0 0 1 0-1.414z'/%3e%3c/svg%3e");
+}
+
+::ng-deep .close:hover {
+  color: #fff
+}
+
+::ng-deep .modal-header {
+  border: none;
+}
+
+::ng-deep .modal-backdrop {
+  background-color: transparent !important;
+}
+
+::ng-deep .modal-dialog {
+  max-width: 100% !important;
+  margin: 0 !important;
+}
+
+::ng-deep .modal-content {
+  background-color: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+::ng-deep .modal-body {
+  padding: 0 !important;
+}
+
+::ng-deep body.modal-open {
+  overflow: hidden !important;
 }

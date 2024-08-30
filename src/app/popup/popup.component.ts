@@ -1,20 +1,27 @@
-import { Component, EventEmitter, Inject, Input, Output } from '@angular/core';
+import { Component, EventEmitter, inject, Inject, Input, Output } from '@angular/core';
 import { Project } from '../types/project';
+import { TranslateModule } from '@ngx-translate/core';
+import { TranslationService } from '../service/translation.service';
 
 @Component({
   selector: 'app-popup',
   standalone: true,
-  imports: [],
+  imports: [TranslateModule],
   templateUrl: './popup.component.html',
   styleUrl: './popup.component.scss'
 })
 export class PopupComponent {
+
+  translationService = inject(TranslationService);
 
   @Input()
   project: Project | null = null;
 
   @Input()
   index: number = 0;
+
+  @Input()
+  selectedLang: string = '';
 
   @Output() onNext = new EventEmitter<any>();
 

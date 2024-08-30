@@ -10,12 +10,12 @@ import { TranslationService } from '../service/translation.service';
   styleUrl: './hero.component.scss'
 })
 export class HeroComponent {
-  toggleUrl = '../../assets/img/en.png';
   translate = inject(TranslationService);
+  toggleUrl = `../../assets/img/${localStorage.getItem('lang')??'en'}.png`;
   
   selectLanguage() {
     const lang = this.translate.getSelectedLanguage();
-    const newLang = lang == 'en' ? 'de':'en';
+    const newLang = lang === 'en' ? 'de' :'en';
     this.toggleUrl=`../../assets/img/${newLang}.png`;
     this.translate.switchLanguage(newLang);
   }

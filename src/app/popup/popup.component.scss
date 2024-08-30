@@ -9,18 +9,20 @@
   color: #fff;
   border-radius: 1.875rem;
   border: 1px solid rgba(61, 207, 182, 1);
-  font-family: 'Fira code';
+  font-family: 'Fira Code', monospace;
+  position: relative;
 }
 
 .projectInfo {
   max-width: 30rem;
-  height: 29.6rem;
+  height: auto;
+  /* Adjust height to auto for responsive */
 }
 
 .projectNumber {
   font-size: 8rem;
   font-weight: 700;
-  font-family: 'Karla';
+  font-family: 'Karla', sans-serif;
   color: rgba(61, 207, 182, 1);
   margin: 0;
 }
@@ -40,7 +42,7 @@
 }
 
 .projectDescription {
-  font-family: 'Karla';
+  font-family: 'Karla', sans-serif;
   font-size: 1.125rem;
   color: rgba(255, 255, 255, 1);
 }
@@ -73,7 +75,7 @@
 .button {
   width: 8.125rem;
   height: 3rem;
-  padding: 1.5rem 0 1.5rem 0;
+  padding: 0;
   border: 1px solid white;
   border-radius: 6.25rem;
   cursor: pointer;
@@ -104,11 +106,16 @@
 
 .projectImage {
   max-width: 80%;
+  flex-grow: 1;
+  /* Allows the image to take up remaining space */
 }
 
 .projectImage img {
-  width: 32.5rem;
+  width: 100%;
+  max-width: 32.5rem;
   border-radius: 1.825rem;
+  object-fit: cover;
+  /* Ensures the image covers the container without distortion */
 }
 
 .nextProjectLink {
@@ -136,10 +143,51 @@
   transform: translateX(5px);
 }
 
-
+/* Responsive Adjustments */
 @media (max-width: 768px) {
+
+  .projectJoin,
+  .projectElp {
+    flex-direction: column;
+    padding: 2rem 1rem;
+    /* Increase padding for better spacing */
+  }
+
+  .projectInfo {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .projectNumber {
+    font-size: 6rem;
+    /* Decrease size on smaller screens */
+  }
+
+  .projectTitle {
+    font-size: 3rem;
+  }
+
+  .projectDescriptionTitle,
+  .projectDescription {
+    font-size: 1.125rem;
+  }
+
+  .technologies {
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .links {
+    justify-content: center;
+  }
+
   .projectImage img {
     width: 22.5rem;
+    /* Adjust image width for smaller screens */
   }
-  
+
+  .nextProjectLink {
+    position: static;
+    margin: 1rem auto 0;
+  }
 }

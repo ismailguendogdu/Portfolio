@@ -8,11 +8,15 @@ export class TranslationService {
   langDe = false;
 
   constructor(private translate: TranslateService) {
-    translate.setDefaultLang('en');
+    let lang = localStorage.getItem('lang');
+    let currentLang = lang ? lang : 'en'; 
+    translate.setDefaultLang(currentLang);
+    translate.currentLang = currentLang;
   }
 
   public switchLanguage(language: string): void {
     this.translate.use(language);
+    localStorage.setItem('lang',language);
   }
 
   public getSelectedLanguage(): string {

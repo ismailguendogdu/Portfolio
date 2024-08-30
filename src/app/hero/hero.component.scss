@@ -83,9 +83,6 @@ a {
     color: white;
     text-align: center;
     margin-top: 6rem;
-    // position: absolute;
-    // top: 19.75rem;
-    // left: 29%;
 
     >h4 {
         font-size: 2.5rem;
@@ -101,7 +98,8 @@ a {
     >div {
         display: flex;
         gap: 2.5rem;
-        margin-top:4rem;
+        margin-top: 4rem;
+
         >span {
             border: 1px solid white;
             border-radius: 6.25rem;
@@ -241,6 +239,7 @@ a {
 .logo {
     display: flex;
     align-items: center;
+    width: 10px;
 }
 
 .initial {
@@ -266,20 +265,20 @@ a {
     transition: all 0.3s ease;
 }
 
-.initialName:hover > p,
+.initialName:hover>p,
 .initialName:hover .initial {
     color: transparent;
     -webkit-text-stroke: 1px #ffffff;
 }
 
-.initialName > p {
+.initialName>p {
     margin: 0;
     padding: 0;
     font-size: 1.5rem;
     font-weight: 700;
     line-height: 1.5rem;
     color: #ffffff;
-    transition: all 0.3s ease; 
+    transition: all 0.3s ease;
 }
 
 .initial:hover {
@@ -287,20 +286,76 @@ a {
     -webkit-text-stroke: 1px #3dcfb6;
 }
 
+/* Common Styling for Navbar */
+.navbar {
+    background-color: #0b201c !important;
+    /* Ensure consistent background color */
+}
 
+.nav-link {
+    color: white !important;
+    font-family: 'Fira Code', monospace;
+    /* Matching the font */
+    font-size: 1.25rem;
+    /* Adjusted font size */
+    margin-bottom: 1rem;
+    text-decoration: none;
+    position: relative;
+    font-weight: 600;
+    /* Ensures bold text */
+}
 
+.nav-link:hover {
+    color: rgba(106, 215, 191, 1) !important;
+}
+
+.navbar-toggler {
+    border: none !important;
+    outline: none;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(61, 207, 182, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+}
+
+@media (max-width: 992px) {
+    .navbar-collapse {
+        top: 4rem;
+        right: 1rem;
+        left: auto;
+        background-color: rgba(18, 31, 29, 0.95);
+        border: 1px solid rgba(106, 215, 191, 0.5);
+        border-radius: 20px;
+        padding: 1rem;
+        margin-top: 1rem;
+        width: auto;
+        position: absolute;
+    }
+
+    .navbar-nav {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-item:last-child .nav-link {
+        padding: 0.5rem 1rem;
+        background-color: rgba(106, 215, 191, 0.2);
+        border-radius: 1rem;
+        text-align: center;
+    }
+}
 
 @media (max-width: 768px) {
     .title {
-        // width: 50%;
         margin-top: 10rem;
 
-        >h4 {
+        h4 {
             font-size: 1.5rem;
             margin: 0;
         }
 
-        >h1 {
+        h1 {
             font-size: 4rem;
             font-weight: 700;
             margin: 0;
@@ -310,6 +365,4 @@ a {
     header {
         display: none !important;
     }
-
-  
 }

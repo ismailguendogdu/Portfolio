@@ -4,7 +4,7 @@
     <h2 class="projectTitle">{{project?.title}}</h2>
     <p class="projectDescriptionTitle">What is this project about?</p>
     <p class="projectDescription">
-      {{project?.description}}
+      {{project?.description?.get(this.translationService.getSelectedLanguage())}}
     </p>
     <div class="technologies">
       @for (tech of project?.technologies; track $index) {
