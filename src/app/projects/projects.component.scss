@@ -104,8 +104,16 @@ section {
     display: none;
   }
 
+  .project {
+    width: 100%;
+  }
+
   .projectContainer {
     width: 100%;
+
+    h1 {
+      font-size: 2.5rem;
+    }
   }
 }
 

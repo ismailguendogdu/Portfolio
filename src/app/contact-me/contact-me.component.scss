@@ -134,6 +134,19 @@ textarea {
     color: rgba(106, 215, 191, 1);
 }
 
+@media (max-width: 968px) {
+    .container {
+        display: block;
+        } 
+        .left h1 {
+            font-size: 1.3rem;
+        }
+        .left h2 {
+            font-size: 2.5rem;
+            font-weight: 700;
+        }
+}
+
 
 @media (max-width: 768px) {
     .container {

@@ -25,8 +25,7 @@ export class ProjectsComponent {
         {imageUrl:'./assets/img/iconOCSS.png',title:'CSS'},
         {imageUrl:'./assets/img/iconOHTML.png',title:'Html'},
         {imageUrl:'./assets/img/iconOFirebase.png',title:'Firebase'},
-        {imageUrl:'./assets/img/iconOAngular.png',title:'Angular'},
-        {imageUrl:'./assets/img/iconOTypeScript.png',title:'Typescript'}
+        {imageUrl:'./assets/img/iconOJavascript.png',title:'Javascript'}
        ],
        githubUrl:'https://github.com/ismailguendogdu/Join',
         liveUrl:'https://github.com/ismailguendogdu/Join'

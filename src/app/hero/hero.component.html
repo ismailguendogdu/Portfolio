@@ -4,6 +4,10 @@
       <!-- Brand or Logo -->
       <a class="navbar-brand" href="#">
         <p class="initial">IG</p>
+        <div class="initialName">
+          <p>Ismail</p>
+          <p>Gündoğdu</p>
+        </div>
       </a>
 
       <!-- Navbar toggle button -->
@@ -13,20 +17,21 @@
       </button>
 
       <!-- Collapsible menu -->
-      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <div class="collapse navbar-collapse justify-content-flex-start" id="navbarNav">
         <ul class="navbar-nav text-end">
-          <li class="nav-item">
-            <a class="nav-link" href="#">About me</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Skills</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Projects</a>
-          </li>
           <li class="nav-item">
             <img src={{toggleUrl}} (click)="selectLanguage()" alt="langToggle">
           </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#aboutMe">About me</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#skills">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#projects">Projects</a>
+          </li>
+       
         </ul>
       </div>
     </div>

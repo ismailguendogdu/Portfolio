@@ -35,7 +35,7 @@
     },
     "contactMe": {
         "h1": "Kontaktieren Sie mich",
-        "h2": "Lass uns zusammenarbeiten",
+        "h2": "Kommen wir zusammen",
         "question": "Haben Sie ein Problem zu lösen?",
         "statementP": "Kontaktieren Sie mich über dieses Formular, ich bin interessiert daran, von Ihnen zu hören, Ihre Ideen kennenzulernen und mit meiner Arbeit zu Ihren Projekten beizutragen.",
         "statementQ": "Brauchen Sie einen Frontend-Entwickler?",
@@ -43,6 +43,7 @@
         "nameError": "Bitte geben Sie Ihren Namen ein",
         "email": "Was ist Ihre E-Mail-Adresse?",
         "emailError": "Bitte geben Sie Ihre E-Mail-Adresse ein",
+        "emailPlaceholder": "deine Email",
         "message": "Wie kann ich Ihnen helfen?",
         "messageError": "Bitte geben Sie eine Nachricht ein",
         "policyText": "Ich habe die Datenschutzbestimmungen gelesen und stimme der Verarbeitung meiner Daten wie beschrieben zu.",

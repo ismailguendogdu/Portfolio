@@ -43,6 +43,7 @@
         "nameError": "Please enter your name",
         "email": "What's your email?",
         "emailError": "Please enter your email",
+        "emailPlaceholder": "youremai@email.com",
         "message": "How can I help you?",
         "messageError": "Please enter your message",
         "policyText": "I've read the privacy policy and agree to the processing of my data as outlined.",
