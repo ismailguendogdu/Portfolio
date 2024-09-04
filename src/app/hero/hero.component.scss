@@ -99,7 +99,7 @@ a {
         display: flex;
         gap: 2.5rem;
         margin-top: 4rem;
-
+        padding: 10px;
         >span {
             border: 1px solid white;
             border-radius: 6.25rem;
@@ -109,7 +109,6 @@ a {
             overflow: hidden;
             white-space: nowrap;
             transition: border-color 0.3s, color 0.3s;
-
             &:hover {
                 border-color: rgba(106, 215, 191, 1);
                 color: rgba(106, 215, 191, 1);
@@ -184,8 +183,8 @@ a {
     display: flex;
     position: absolute;
     flex-direction: column;
-    bottom: 10rem;
-    right: 5rem;
+    top: 69.5%;
+    right: 3rem;
     align-items: center;
     justify-content: center;
     color: white;
@@ -211,7 +210,16 @@ a {
 
     }
 }
+.mail-info{
+    display: none;
+}
 
+
+.button-area{
+    display: flex;
+    align-items: center;
+    gap:20px;
+}
 .rightLateral .line {
     height: 11rem;
     border: 1px solid rgba(61, 207, 182, 1);
@@ -370,6 +378,26 @@ a {
     .initialName{
         display: none;
     }
+    .rightLateral{
+        >p{
+            display: none;
+        }
+    }
+    .mail-info{
+        display: block;
+    }
+    .btnText{
+        font-size: 14px;
+    }
+    .rightLateral .line {
+        height: 8rem;
+        border: 1px solid rgba(61, 207, 182, 1);
+        margin-top: 1rem;
+        position: absolute;
+        top: 8rem;
+    }
+    
+    
 }
 
 @media (max-width: 768px) {
@@ -391,6 +419,63 @@ a {
     header {
         display: none !important;
     }
+    .leftLateral {
+        display: flex;
+        position: absolute;
+        flex-direction: column;
+        top: 85%;
+        left: 1.5rem;
+        transform: translateY(-50%);
+        align-items: center;
+    }
+    .rightLateral {
+        display: flex;
+        position: absolute;
+        flex-direction: column;
+        top: 69.5%;
+        right: 1.5rem;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        gap: 1rem;
+    
+       
+    }
 
+    .crossLoop {
+        background-color: rgba(255, 255, 255, 0.12);
+        border: 1px solid;
+        position: absolute;
+        width: 100%;
+        top: 39rem;
+        left: -1rem;
+        rotate: -3deg;
+        overflow: hidden;
+        box-sizing: border-box;
+        line-height: .5;
+    }
   
+}
+
+
+@media (max-width:425px){
+    .button-area{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap:5px;
+    }
+    // .crossLoop {
+    //     background-color: rgba(255, 255, 255, 0.12);
+    //     border: 1px solid;
+    //     position: absolute;
+    //     width: 100%;
+    //     top: 47rem;
+    //     left: -1rem;
+    //     rotate: -3deg;
+    //     overflow: hidden;
+    //     box-sizing: border-box;
+    //     line-height: .5;
+
+    // }
 }
