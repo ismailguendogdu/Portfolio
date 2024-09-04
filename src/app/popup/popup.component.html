@@ -1,30 +1,38 @@
 <section class="projectJoin">
   <div class="projectInfo">
-    <h1 class="projectNumber">{{project?.id}}</h1>
-    <h2 class="projectTitle">{{project?.title}}</h2>
+    <h1 class="projectNumber">{{ project?.id }}</h1>
+    <h2 class="projectTitle">{{ project?.title }}</h2>
     <p class="projectDescriptionTitle">What is this project about?</p>
     <p class="projectDescription">
-      {{project?.description?.get(this.translationService.getSelectedLanguage())}}
+      {{
+        project?.description?.get(this.translationService.getSelectedLanguage())
+      }}
     </p>
     <div class="technologies">
       @for (tech of project?.technologies; track $index) {
-      <span class="tech"><img src="{{tech.imageUrl}}" alt="">{{tech.title}}</span>
+      <span class="tech"
+        ><img src="{{ tech.imageUrl }}" alt="" />{{ tech.title }}</span
+      >
       }
     </div>
     <div class="links">
-      <a href="{{project?.githubUrl}}" target="_blank" class="button">GitHub <img src="./assets/img/arrow_outward.png"
-          alt=""></a>
-      <a href="{{project?.liveUrl}}" target="_blank" class="button">Live Test <img src="./assets/img/arrow_outward.png"
-          alt=""></a>
+      <a href="{{ project?.githubUrl }}" target="_blank" class="button"
+        >GitHub <img src="./assets/img/arrow_outward.png" alt=""
+      /></a>
+      <a href="{{ project?.liveUrl }}" target="_blank" class="button"
+        >Live Test <img src="./assets/img/arrow_outward.png" alt=""
+      /></a>
     </div>
   </div>
 
   <div class="projectImage">
-    <img src="{{project?.imageUrl}}" alt="Kanban Project Management Tool Screenshot" />
+    <img
+      src="{{ project?.imageUrl }}"
+      alt="Kanban Project Management Tool Screenshot"
+    />
   </div>
   <span (click)="next()" class="nextProjectLink">
     Next project
-    <img src="/assets/img/arrowRightHover.png" alt="Arrow Right">
+    <img src="/assets/img/arrowRightHover.png" alt="Arrow Right" />
   </span>
-
 </section>

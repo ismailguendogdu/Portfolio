@@ -141,15 +141,56 @@ section {
   border: none;
   opacity: 1;
   color: #fff !important;
+  right: 400px;
+  top: 45px;
+  z-index: 40;
   background: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath d='M.293.293a1 1 0 0 1 1.414 0L8 6.586 14.293.293a1 1 0 1 1 1.414 1.414L9.414 8l6.293 6.293a1 1 0 0 1-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 0 1-1.414-1.414L6.586 8 .293 1.707a1 1 0 0 1 0-1.414z'/%3e%3c/svg%3e");
 }
 
+@media (max-width:1441px){
+  .btn-close {
+    position: absolute;
+    border: none;
+    opacity: 1;
+    color: #fff !important;
+    right: 220px;
+    top: 45px;
+    z-index: 40;
+    background: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath d='M.293.293a1 1 0 0 1 1.414 0L8 6.586 14.293.293a1 1 0 1 1 1.414 1.414L9.414 8l6.293 6.293a1 1 0 0 1-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 0 1-1.414-1.414L6.586 8 .293 1.707a1 1 0 0 1 0-1.414z'/%3e%3c/svg%3e");
+  }
+}
+@media (max-width:1190px){
+  .btn-close {
+    position: absolute;
+    border: none;
+    opacity: 1;
+    color: #fff !important;
+    right: 120px;
+    top: 45px;
+    z-index: 40;
+    background: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath d='M.293.293a1 1 0 0 1 1.414 0L8 6.586 14.293.293a1 1 0 1 1 1.414 1.414L9.414 8l6.293 6.293a1 1 0 0 1-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 0 1-1.414-1.414L6.586 8 .293 1.707a1 1 0 0 1 0-1.414z'/%3e%3c/svg%3e");
+  }
+}
+@media (max-width:965px){
+  .btn-close {
+    position: absolute;
+    border: none;
+    opacity: 1;
+    color: #fff !important;
+    right: 50px;
+    top: 40px;
+    z-index: 40;
+    background: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath d='M.293.293a1 1 0 0 1 1.414 0L8 6.586 14.293.293a1 1 0 1 1 1.414 1.414L9.414 8l6.293 6.293a1 1 0 0 1-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 0 1-1.414-1.414L6.586 8 .293 1.707a1 1 0 0 1 0-1.414z'/%3e%3c/svg%3e");
+  }
+}
 ::ng-deep .close:hover {
   color: #fff
 }
 
 ::ng-deep .modal-header {
-  border: none;
+  border: none !important;
+  padding: 0px;
+  margin: 0px;
 }
 
 ::ng-deep .modal-backdrop {
@@ -168,7 +209,6 @@ section {
 }
 
 ::ng-deep .modal-body {
-  padding: 0 !important;
 }
 
 ::ng-deep body.modal-open {
