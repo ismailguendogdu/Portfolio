@@ -1,118 +1,119 @@
 section {
-    margin-top: 10rem;
+  margin-top: 10rem;
 }
-    h1 {
-        font-size: 2.5rem;
-        font-weight: 700;
-        color:  rgba(61, 207, 182, 1);
-        text-align: center;
+  h1 {
+      font-size: 2.5rem;
+      font-weight: 700;
+      color:  rgba(61, 207, 182, 1);
+      text-align: center;
+  }
+  .carousel-container {
+      max-width: max-content;
+      margin: auto;
+      position: relative;
+      overflow: hidden;
     }
-    .carousel-container {
-        max-width: max-content;
-        margin: auto;
-        position: relative;
-        overflow: hidden;
-      }
-      
-      .slideshow-container {
-        display: flex;
-        transition: transform 0.5s ease-in-out;
-        will-change: transform;
-        position: relative;
-        left: -30%;
-        transform: translateX(-100%);
-      }
-      
-      .carousel-slide {
-        width: 40rem;
-        height: 50vh;
-        margin: 0 1.5rem; 
-        position: relative;
-        flex-shrink: 0;
-        border-radius: 2rem;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-        color: white;
-      }
-      
-      .text-container {
-        background-color:#15483f;
-        border-radius: 2rem;
-        padding: 1.2rem;
-        color: #ffffff;
-        text-align: center;
-        font-size: 1.25rem;
-        height: 12rem;
-        width: 30rem;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        overflow: hidden;
-        border: 1px solid rgba(61, 207, 182, 1);
-      }
-      
-      .text-container p {
-        margin: 0;
-      }
-      
-      .text-container .author {
-        margin-top: .8rem;
-        text-align: right;
-        font-style: italic;
-        font-size: 1.5rem;
-        color: #b5b5b5; 
-      }
-      
-      .prev, .next {
-        cursor: pointer;
-        width: auto;
-        padding: 16px;
-        color: white;
-        font-weight: bold;
-        font-size: 18px;
-        transition: 0.6s ease;
-        border-radius: 0 3px 3px 0;
-        user-select: none;
-      }
+    
+    .slideshow-container {
+      display: flex;
+      transition: transform 0.5s ease-in-out;
+      will-change: transform;
+      position: relative;
+       left: 30%;
+      transform: translateX(-665px);
 
-      .next {
-        right: 0;
-      }
-      
-      .prev:hover {
-        content: url('/assets/img/arrowLeftHover.png');
-      }
-      
-      .next:hover {
-        content: url('/assets/img/arrowRightHover.png');
-      }
-      
-      .dot-container {
-        margin-top: 1rem;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
-      
-      .dot {
-        cursor: pointer;
-        height: .5rem;
-        width: .5rem;
-        margin: 0 .3rem;
-        background-color: #bbb;
-        border-radius: 50%;
-        display: inline-block;
-        transition: background-color 0.6s ease;
-      }
-      
-      .active, .dot:hover {
-        background-color: #1a5a58;
-      }
+    }
+    
+    .carousel-slide {
+      width: 40rem;
+      height: 400px; 
+      margin: 0 1.5rem; 
+      position: relative;
+      flex-shrink: 0;
+      border-radius: 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: white;
+    }
+    
+    .text-container {
+      background-color:#15483f;
+      border-radius: 2rem;
+      padding: 1.2rem;
+      color: #ffffff;
+      text-align: center;
+      font-size: 1.25rem;
+      height: auto;
+      width: 30rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      overflow: hidden;
+      border: 1px solid rgba(61, 207, 182, 1);
+    }
+    
+    .text-container p {
+      margin: 0;
+    }
+    
+    .text-container .author {
+      margin-top: .8rem;
+      text-align: right;
+      font-style: italic;
+      font-size: 1.5rem;
+      color: #b5b5b5; 
+    }
+    
+    .prev, .next {
+      cursor: pointer;
+      width: auto;
+      padding: 16px;
+      color: white;
+      font-weight: bold;
+      font-size: 18px;
+      transition: 0.6s ease;
+      border-radius: 0 3px 3px 0;
+      user-select: none;
+    }
 
-      @media (max-width: 768px) {
-        section {
-          margin-top: 21rem;
-        }
+    .next {
+      right: 0;
+    }
+    
+    .prev:hover {
+      content: url('/assets/img/arrowLeftHover.png');
+    }
+    
+    .next:hover {
+      content: url('/assets/img/arrowRightHover.png');
+    }
+    
+    .dot-container {
+      margin-top: 1rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    .dot {
+      cursor: pointer;
+      height: .5rem;
+      width: .5rem;
+      margin: 0 .3rem;
+      background-color: #bbb;
+      border-radius: 50%;
+      display: inline-block;
+      transition: background-color 0.6s ease;
+    }
+    
+    .active, .dot:hover {
+      background-color: #1a5a58;
+    }
+
+    @media (max-width: 768px) {
+      section {
+        margin-top: 21rem;
       }
+    }

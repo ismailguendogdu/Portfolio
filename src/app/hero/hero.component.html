@@ -1,8 +1,11 @@
 <section>
   <nav class="navbar navbar-expand-lg navbar-dark">
-    <div class="container-fluid">
+    <div class="container-fluid d-flex p-0 flex-row flex-lg-row-reverse">
       <!-- Brand or Logo -->
-      <a class="navbar-brand" href="#">
+      <a
+        class="d-flex justify-content-center align-items-center gap-3"
+        href="#"
+      >
         <p class="initial">IG</p>
         <div class="initialName">
           <p>Ismail</p>
@@ -11,16 +14,30 @@
       </a>
 
       <!-- Navbar toggle button -->
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <button
+        class="navbar-toggler shadow-none"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
         <span class="navbar-toggler-icon"></span>
       </button>
 
       <!-- Collapsible menu -->
-      <div class="collapse navbar-collapse justify-content-flex-start" id="navbarNav">
+      <div
+        class="collapse navbar-collapse justify-content-flex-start z-3"
+        id="navbarNav"
+      >
         <ul class="navbar-nav text-end">
-          <li class="nav-item">
-            <img src={{toggleUrl}} (click)="selectLanguage()" alt="langToggle">
+          <li class="nav-item" style="margin-top: 10px">
+            <img
+              src="{{ toggleUrl }}"
+              (click)="selectLanguage()"
+              alt="langToggle"
+            />
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#aboutMe">About me</a>
@@ -31,7 +48,6 @@
           <li class="nav-item">
             <a class="nav-link" href="#projects">Projects</a>
           </li>
-       
         </ul>
       </div>
     </div>
@@ -87,37 +103,49 @@
     <h1>Ismail Gündoğdu</h1>
 
     <div>
-      <span><span class="btnText"><a href="#projects">{{'hero.check' | translate}}</a></span></span>
-      <span><span class="btnText"><a href="#contactMe">{{'hero.contactMe' | translate}}</a></span></span>
+      <span
+        ><span class="btnText"
+          ><a href="#projects">{{ "hero.check" | translate }}</a></span
+        ></span
+      >
+      <span
+        ><span class="btnText"
+          ><a href="#contactMe">{{ "hero.contactMe" | translate }}</a></span
+        ></span
+      >
     </div>
   </div>
 
   <div class="crossLoop">
     <ul>
-      <li>{{'hero.remote' | translate}}</li>
-      <li>{{'hero.frontEnd' | translate}}</li>
-      <li>{{'hero.based' | translate}}</li>
-      <li>{{'hero.work' | translate}}</li>
-      <li>{{'hero.remote' | translate}}</li>
-      <li>{{'hero.frontEnd' | translate}}</li>
-      <li>{{'hero.based' | translate}}</li>
-      <li>{{'hero.work' | translate}}</li>
+      <li>{{ "hero.remote" | translate }}</li>
+      <li>{{ "hero.frontEnd" | translate }}</li>
+      <li>{{ "hero.based" | translate }}</li>
+      <li>{{ "hero.work" | translate }}</li>
+      <li>{{ "hero.remote" | translate }}</li>
+      <li>{{ "hero.frontEnd" | translate }}</li>
+      <li>{{ "hero.based" | translate }}</li>
+      <li>{{ "hero.work" | translate }}</li>
     </ul>
   </div>
 
   <div class="rightLateral">
-    <p><a href="mailto:ismailguendogdu@gmail.com">guendogdu.ismail&commat;gmail.com</a></p>
+    <p>
+      <a href="mailto:ismailguendogdu@gmail.com"
+        >guendogdu.ismail&commat;gmail.com</a
+      >
+    </p>
     <a href="https://github.com/ismailguendogdu" target="_blank">
-      <img src="./assets/img/gitHub.png" alt="">
+      <img src="./assets/img/gitHub.png" alt="" />
     </a>
     <a href="https://github.com/ismailguendogdu">
-      <img src="./assets/img/linkedin.png" alt="">
+      <img src="./assets/img/linkedin.png" alt="" />
     </a>
     <div class="line"></div>
   </div>
 
   <div class="leftLateral">
-    <img src="./assets/img/fileDownHero.png" alt="">
+    <img src="./assets/img/fileDownHero.png" alt="" />
     <div class="line"></div>
   </div>
 </section>

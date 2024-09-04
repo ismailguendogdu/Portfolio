@@ -1,24 +1,33 @@
 <section>
-  <h1>{{"references.colleagues" | translate}}</h1>
+  <h1>{{ "references.colleagues" | translate }}</h1>
   <div class="carousel-container">
     <div class="slideshow-container">
-
       @for(reference of references; track reference.author){
       <div class="carousel-slide">
         <div class="text-container">
-          <p>{{reference.content}}</p>
-          <div class="author">{{reference.author}}</div>
+          <p>{{ reference.content }}</p>
+          <div class="author">{{ reference.author }}</div>
         </div>
       </div>
       }
     </div>
 
     <div class="dot-container">
-      <img class="prev" src="/assets/img/arrowLeft.png" (click)="plusSlides(-1)" alt="Previous">
+      <img
+        class="prev"
+        src="/assets/img/arrowLeft.png"
+        (click)="plusSlides(-1)"
+        alt="Previous"
+      />
       <span class="dot" (click)="currentSlide(1)"></span>
       <span class="dot" (click)="currentSlide(2)"></span>
       <span class="dot" (click)="currentSlide(3)"></span>
-      <img class="next" src="/assets/img/arrowRight.png" (click)="plusSlides(1)" alt="Next">
+      <img
+        class="next"
+        src="/assets/img/arrowRight.png"
+        (click)="plusSlides(1)"
+        alt="Next"
+      />
     </div>
   </div>
 </section>
