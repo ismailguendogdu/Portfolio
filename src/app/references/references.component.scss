@@ -117,3 +117,20 @@ section {
         margin-top: 21rem;
       }
     }
+
+    @media (max-width: 376px) {
+      .carousel-slide {
+        width: 22rem;
+        height: 35rem;
+        padding: .5rem;
+      }
+
+      .slideshow-container {
+        display: flex;
+        transition: transform 0.5s ease-in-out;
+        will-change: transform;
+        position: relative;
+        left: 0%;
+        transform: translateX(-5%);
+    }
+    }
