@@ -2,7 +2,8 @@
 
 section {
     height: 100vh;
-    margin: 0;
+    
+    margin: 0 ;
     padding: 0;
     box-sizing: border-box;
 
@@ -371,7 +372,7 @@ a {
 
     .nav-item:last-child .nav-link {
         padding: 0.5rem 1rem;
-        background-color: rgba(106, 215, 191, 0.2);
+        // background-color: rgba(106, 215, 191, 0.2);
         border-radius: 1rem;
         text-align: center;
     }
@@ -465,6 +466,16 @@ a {
         align-items: center;
         gap:5px;
     }
+    .crossLoop {
+        top: 46rem;
+      }
+
+    // section {
+    //     margin: 0 auto;
+    //     padding: 0;
+    //     max-width: 376px;
+    //     box-sizing: border-box;
+    // }
     // .crossLoop {
     //     background-color: rgba(255, 255, 255, 0.12);
     //     border: 1px solid;

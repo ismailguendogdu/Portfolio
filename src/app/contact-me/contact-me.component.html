@@ -30,7 +30,7 @@
       <span class="error">{{"contactMe.messageError" | translate}}</span>
       }
       <label class="policyText">
-        <input type="checkbox" name="policyAccepted" required />
+        <input type="checkbox" [(ngModel)]="policyAccepted" name="policyAccepted" required />
         {{"contactMe.policyText" | translate}}
       </label>
 
