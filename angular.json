@@ -21,7 +21,7 @@
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
-              "zone.js"
+               "src/polyfills.ts"
             ],
             "tsConfig": "tsconfig.app.json",
             "inlineStyleLanguage": "scss",
@@ -34,8 +34,8 @@
               "node_modules/bootstrap/dist/css/bootstrap.min.css"
             ],
             "scripts": [
-              "./node_modules/popper.js/dist/popper.js",
-              "./node_modules/bootstrap/dist/js/bootstrap.min.js"
+          "/node_modules/@popperjs/core/dist/umd/popper.min.js",
+              "/node_modules/bootstrap/dist/js/bootstrap.min.js"
             ]
           },
           "configurations": {

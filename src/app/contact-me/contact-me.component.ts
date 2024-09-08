@@ -41,7 +41,7 @@ export class ContactMeComponent {
   };
 
   getFieldIsValid(name: string, ngForm: NgForm): boolean {
-    if (!ngForm.form.controls[name].touched) {
+    if (!ngForm.form.controls[name]?.touched) {
       return true;
     }
     return ngForm.form.controls[name].valid;
