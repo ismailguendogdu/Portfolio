@@ -1,21 +1,12 @@
 <section>
   <div id="projects" class="projectContainer">
     <h4>Portfolio</h4>
-    <ng-template #content let-c="close" let-d="dismiss" [size]="'xl'">
+    <ng-template #content let-c="close" let-d="dismiss">
       <section class="modal-body projectJoin">
         <div class="modal-header">
-          <button
-            type="button"
-            class="btn-close"
-            aria-label="Close"
-            (click)="d('Cross click')"
-          ></button>
+          <button type="button" class="btn-close" aria-label="Close" (click)="d('Cross click')"></button>
         </div>
-        <app-popup
-          (onNext)="onNext($event)"
-          [project]="selectedProject"
-          [index]="selectedIndex"
-        />
+        <app-popup (onNext)="onNext($event)" [project]="selectedProject" [index]="selectedIndex" />
       </section>
     </ng-template>
 
@@ -23,19 +14,14 @@
     @for (project of projects; track $index;) {
     <div class="project" (click)="selectProject(project, $index)">
       <div class="popup">
-        <img
-          src="{{ project.imageUrl }}"
-          alt="{{ project.title }}"
-          class="popupImage"
-        />
+        <img src="{{ project.imageUrl }}" alt="{{ project.title }}" class="popupImage" />
       </div>
       <div class="projectContent" (click)="open(content)">
         <h3>{{ project.title }}</h3>
         <p>
           @for (tech of project.technologies; track $index) {
           {{ tech.title }} @if ($index !== project.technologies.length-1) {<span>
-            |</span
-          >} }
+            |</span>} }
         </p>
       </div>
     </div>

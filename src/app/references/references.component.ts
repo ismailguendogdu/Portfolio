@@ -32,7 +32,7 @@ export class ReferencesComponent implements OnInit {
     if (n > slides.length) { this.slideIndex = 1 }
     if (n < 1) { this.slideIndex = slides.length }
 
-    const offset = -((this.slideIndex - 1) * (slides[0].offsetWidth + 40)); // 40px for margin
+    const offset = -((this.slideIndex - 1) * (slides[0]?.offsetWidth + 40)); // 40px for margin
 
     const slideshowContainer = document.querySelector('.slideshow-container') as HTMLElement;
     slideshowContainer.style.transform = `translateX(${offset}px)`;
