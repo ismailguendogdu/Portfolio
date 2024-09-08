@@ -2,19 +2,26 @@
 
 * {
   box-sizing: border-box;
-  max-width: 100%;
+}
+html{
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
 }
 
 body {
-  margin: 0;
-  padding: 0 2rem;
-  width: 100%;
+   margin: 0;
+  padding: 0 1rem;
   height: 100%;
   box-sizing: border-box;
   font-family: 'Fira Code';
   background-image: linear-gradient(rgb(10 32 28), rgb(28, 28, 28));
   scroll-behavior: smooth;
+  max-width: 2500px;
+  width: 100% !important;
 }
+
+
 
 @font-face {
   font-display: swap;

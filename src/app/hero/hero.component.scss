@@ -1,12 +1,12 @@
 @import "bootstrap/scss/bootstrap.scss";
 
 section {
-    height: 100vh;
+    height: 100%;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
     header {
+
         div {
             display: flex;
             justify-content: space-between;
@@ -137,13 +137,20 @@ a {
     }
 }
 
+.loop-line{
+    max-width: 2500px !important;
+    width: 100% !important;
+    position: relative;
+    top: -10rem;
+}
+
+
 .crossLoop {
     background-color: rgba(255, 255, 255, 0.12);
     border: 1px solid;
     position: absolute;
     width: 100%;
-    top: 54rem;
-    left: -1rem;
+    top: 25rem;
     rotate: -3deg;
     overflow: hidden;
     box-sizing: border-box;
@@ -183,19 +190,17 @@ a {
     display: flex;
     position: absolute;
     flex-direction: column;
-    top: 69.5%;
-    right: 3rem;
+    right: 0rem;
+    width: 30px;
     align-items: center;
     justify-content: center;
     color: white;
     gap: 1rem;
-
+    padding-top: 100px;
     >p {
         rotate: -90deg;
-        margin: 0;
         font-size: 0.8rem;
-        position: absolute;
-        bottom: 7rem;
+        margin-bottom: 75px;
 
         >a {
             text-decoration: none;
@@ -204,11 +209,6 @@ a {
 
     }
 
-    >img {
-        position: relative;
-        top: -2rem;
-
-    }
 }
 .mail-info{
     display: none;
@@ -224,16 +224,16 @@ a {
     height: 11rem;
     border: 1px solid rgba(61, 207, 182, 1);
     margin-top: 1rem;
-    position: absolute;
-    top: 7rem;
 }
 
 .leftLateral {
     display: flex;
     position: absolute;
     flex-direction: column;
-    top: 85%;
-    left: 3rem;
+    justify-content: center;
+    align-items: end;
+    left: 0rem;
+    padding-top: 700px;
     transform: translateY(-50%);
     align-items: center;
 }
@@ -298,7 +298,9 @@ a {
 }
 
 .navbar {
-    background-color: #0b201c !important
+    background-color: #0b201c !important;
+    // padding: 0 2rem;
+
 }
 
 .nav-link {
@@ -390,11 +392,13 @@ a {
         font-size: 14px;
     }
     .rightLateral .line {
-        height: 8rem;
+        height: 11rem;
         border: 1px solid rgba(61, 207, 182, 1);
         margin-top: 1rem;
-        position: absolute;
-        top: 8rem;
+       
+    }
+    .rightLateral{
+        padding-top: 165px;
     }
     
     
@@ -447,13 +451,12 @@ a {
         border: 1px solid;
         position: absolute;
         width: 100%;
-        top: 39rem;
-        left: -1rem;
         rotate: -3deg;
         overflow: hidden;
         box-sizing: border-box;
         line-height: .5;
     }
+    
   
 }
 
@@ -478,4 +481,5 @@ a {
     //     line-height: .5;
 
     // }
+
 }
