@@ -81,6 +81,7 @@ label {
 
 .policyText {
     font-size: 0.7rem;
+    color: white;
 }
 
 input,
@@ -159,4 +160,9 @@ textarea {
         .right {
             width: 100%;
         }    
+}
+
+.policy-text{
+    color: #6ad7c0;
+    text-decoration: none;
 }

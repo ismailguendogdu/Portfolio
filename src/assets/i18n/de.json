@@ -46,7 +46,9 @@
         "emailPlaceholder": "deine Email",
         "message": "Wie kann ich Ihnen helfen?",
         "messageError": "Bitte geben Sie eine Nachricht ein",
-        "policyText": "Ich habe die <a href='/datenschutz' target='_blank'>Datenschutzbestimmungen</a> gelesen und stimme der Verarbeitung meiner Daten wie beschrieben zu.",
+        "policyText1": "Ich habe die",
+        "policyText2": "Datenschutzbestimmungen",
+        "policyText3": "gelesen und stimme der Verarbeitung meiner Daten wie beschrieben zu.",
         "btnText": "Sag Hallo :)"
     }
 }
