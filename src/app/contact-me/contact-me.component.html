@@ -34,7 +34,7 @@
         {{"contactMe.policyText" | translate}}
       </label>
 
-      <button type="submit" class="submit-btn">{{"contactMe.btnText" | translate}}</button>
+      <button type="submit" class="submit-btn" [disabled]="!contactForm.form.valid || !policyAccepted">{{ "contactMe.btnText" | translate }}</button>
     </form>
   </div>
 </div>

@@ -128,9 +128,10 @@ section {
 
     @media (max-width: 376px) {
       .carousel-slide {
-        width: 22rem;
-        height: 35rem;
-        padding: .5rem;
+        flex-basis: 100%;
+        max-width: 100%; 
+        margin: 0 0.5rem;
+        height: auto;
       }
 
       .slideshow-container {
@@ -141,4 +142,11 @@ section {
         left: 0%;
         transform: translateX(-5%);
     }
+
+    .carousel-container {  
+      mask-image: none;
     }
+    h1 {
+      margin-bottom: 2rem;
+    }
+  }

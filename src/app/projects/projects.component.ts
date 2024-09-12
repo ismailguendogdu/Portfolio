@@ -19,7 +19,7 @@ export class ProjectsComponent {
       title:'Join',
       description: new Map<string, string>([
         ["en", "Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories."],
-        ["de", "value2"]
+        ["de", "Aufgabenmanager inspiriert vom Kanban-System. Erstellen und organisieren Sie Aufgaben mit Drag-and-Drop-Funktionen, weisen Sie Benutzer und Kategorien zu"]
     ]),
        technologies:[
         {imageUrl:'./assets/img/iconOCSS.png',title:'CSS'},
@@ -35,7 +35,7 @@ export class ProjectsComponent {
       title:'El Pollo Loco',
       description:new Map<string, string>([
         ["en", "Jump,run and throw game based on object-oriented approach. Help Pepe to find coins and tabasco salsa to fight against the crazy hen."],
-        ["de", "value2"]
+        ["de", "Spring-, Lauf- und Wurfspiel basierend auf einem objektorientierten Ansatz. Hilf Pepe, Münzen und Tabasco-Salsa zu finden, um gegen die verrückte Henne zu kämpfen."]
     ]),
       technologies:[
         {imageUrl:'./assets/img/iconOCSS.png',title:'CSS'},

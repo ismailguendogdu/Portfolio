@@ -18,9 +18,7 @@ section {
     max-width: 1400px;
     width: 100%;
     gap: 5rem;
-    margin-top: 4rem;
     font-family: 'Fira Code';
-    margin-top: 500px;
 }
 
 .portfolioImage img {
@@ -87,7 +85,6 @@ section {
     padding: 0rem;
     width: 100%;
     gap: 5rem;
-    margin-top: 4rem;
     font-family: 'Fira Code';
     margin-top: 500px;
 }
@@ -97,5 +94,10 @@ section {
     color: rgba(61, 207, 182, 1);
     margin: 0;
 }
+}
 
+@media (max-width: 425px) {
+    section {
+        margin-top: 10px;
+    }
 }
