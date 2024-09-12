@@ -1,7 +1,7 @@
 import { Component, ElementRef, AfterViewInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { TranslateModule } from '@ngx-translate/core';
-import { Image } from './../types/image';
+import { Image } from './../../types/image';
 
 @Component({
   selector: 'app-skills',

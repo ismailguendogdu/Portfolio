@@ -1,7 +1,7 @@
 import { Component, EventEmitter, inject, Inject, Input, Output } from '@angular/core';
-import { Project } from '../types/project';
+import { Project } from '../../types/project';
 import { TranslateModule } from '@ngx-translate/core';
-import { TranslationService } from '../service/translation.service';
+import { TranslationService } from '../../service/translation.service';
 
 @Component({
   selector: 'app-popup',

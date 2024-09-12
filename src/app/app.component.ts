@@ -1,31 +1,33 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { RouterOutlet } from '@angular/router';
-import { HeroComponent } from './hero/hero.component';
-import { AboutMeComponent } from './about-me/about-me.component';
-import { SkillsComponent } from './skills/skills.component';
-import { ProjectsComponent } from './projects/projects.component';
-import { ContactMeComponent } from './contact-me/contact-me.component';
-import { FooterComponent } from './footer/footer.component';
-import { PopupComponent } from './popup/popup.component';
-import { ReferencesComponent } from './references/references.component';
+import { RouterLink, RouterOutlet } from '@angular/router';
+import { HeroComponent } from './main-page/hero/hero.component';
+import { AboutMeComponent } from './main-page/about-me/about-me.component';
+import { SkillsComponent } from './main-page/skills/skills.component';
+import { ProjectsComponent } from './main-page/projects/projects.component';
+import { ContactMeComponent } from './main-page/contact-me/contact-me.component';
+import { FooterComponent } from './main-page/footer/footer.component';
+import { PopupComponent } from './main-page/popup/popup.component';
+import { ReferencesComponent } from './main-page/references/references.component';
 import { NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import { ImpressumComponent } from './impressum/impressum.component';
+import { MainPageComponent } from "./main-page/main-page.component";
+
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule,NgbModule, 
-  RouterOutlet, 
-  HeroComponent, 
-  AboutMeComponent, 
-  SkillsComponent, 
-  ProjectsComponent, 
-  ContactMeComponent, 
-  FooterComponent, 
-  PopupComponent, 
-  ReferencesComponent, 
-  ImpressumComponent
-],
+  imports: [CommonModule, NgbModule,
+    RouterOutlet,
+    HeroComponent,
+    AboutMeComponent,
+    SkillsComponent,
+    ProjectsComponent,
+    ContactMeComponent,
+    FooterComponent,
+    PopupComponent,
+    ReferencesComponent,
+    ImpressumComponent, 
+    MainPageComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })

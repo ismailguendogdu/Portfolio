@@ -1,6 +1,6 @@
 import { Component, inject, HostListener } from '@angular/core';
 import { TranslateModule } from '@ngx-translate/core';
-import { TranslationService } from '../service/translation.service';
+import { TranslationService } from '../../service/translation.service';
 
 @Component({
   selector: 'app-hero',

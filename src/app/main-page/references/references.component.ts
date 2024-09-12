@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Reference } from '../types/reference';
+import { Reference } from '../../types/reference';
 import { TranslateModule } from '@ngx-translate/core';
 
 @Component({

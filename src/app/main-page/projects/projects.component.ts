@@ -1,9 +1,9 @@
 import { Component, inject } from '@angular/core';
-import { Project } from '../types/project';
+import { Project } from '../../types/project';
 import { TranslateModule } from '@ngx-translate/core';
 import { NgbModal, NgbModalConfig } from '@ng-bootstrap/ng-bootstrap';
 import { PopupComponent } from "../popup/popup.component";
-import { TranslationService } from '../service/translation.service';
+import { TranslationService } from '../../service/translation.service';
 
 @Component({
   selector: 'app-projects',
