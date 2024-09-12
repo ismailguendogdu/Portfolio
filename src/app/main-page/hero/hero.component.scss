@@ -1,10 +1,14 @@
 @import "bootstrap/scss/bootstrap.scss";
 
 section {
-    height: 100vh;
+    min-height: calc(100vh - 78px);
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
     header {
 
         div {
@@ -81,8 +85,7 @@ a {
     align-items: center;
     color: white;
     text-align: center;
-    margin-top: 6rem;
-
+    padding-top: 50px;
     >h4 {
         font-size: 2.5rem;
         margin: 0;
@@ -92,6 +95,8 @@ a {
         font-size: 6rem;
         font-weight: 700;
         margin: 0;
+        word-wrap: break-word;
+padding: 0px 10px;
     }
 
     >div {
@@ -139,8 +144,11 @@ a {
 .loop-line{
     max-width: 2500px !important;
     width: 100% !important;
-    position: relative;
-    top: -10rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    padding: 5px;
+
 }
 
 .crossLoop {
@@ -148,12 +156,11 @@ a {
     border: 1px solid;
     position: absolute;
     width: 100%;
-    top: 25rem;
     rotate: -3deg;
     overflow: hidden;
     box-sizing: border-box;
     line-height: .5;
-
+    bottom: 4rem;
     >ul {
         margin-top: 1%;
         display: flex;
@@ -184,15 +191,12 @@ a {
 
 .rightLateral {
     display: flex;
-    position: absolute;
     flex-direction: column;
-    right: 0rem;
     width: 30px;
     align-items: center;
     justify-content: center;
     color: white;
     gap: 1rem;
-    padding-top: 100px;
     >p {
         rotate: -90deg;
         font-size: 0.8rem;
@@ -216,18 +220,13 @@ a {
 .rightLateral .line {
     height: 11rem;
     border: 1px solid rgba(61, 207, 182, 1);
-    margin-top: 1rem;
 }
 
 .leftLateral {
     display: flex;
-    position: absolute;
     flex-direction: column;
     justify-content: center;
     // align-items: end;
-    left: 0rem;
-    padding-top: 700px;
-    transform: translateY(-50%);
     align-items: center;
 }
 
@@ -372,7 +371,6 @@ a {
         display: none;
     }
     .rightLateral{
-        padding-top: 165px;
         >p{
             display: none;
         }
@@ -412,19 +410,12 @@ a {
     }
     .leftLateral {
         display: flex;
-        position: absolute;
         flex-direction: column;
-        top: 85%;
-        left: 1.5rem;
-        transform: translateY(-50%);
         align-items: center;
     }
     .rightLateral {
         display: flex;
-        position: absolute;
         flex-direction: column;
-        top: 69.5%;
-        right: 1.5rem;
         align-items: center;
         justify-content: center;
         color: white;
@@ -443,7 +434,7 @@ a {
     }
 }
 
-@media (max-width:425px){
+@media (max-width:431px){
     .button-area{
         display: flex;
         flex-direction: column;
@@ -451,16 +442,25 @@ a {
         gap:1.5rem !important;
         margin-top: 1rem !important;
     }
-
+    .title{
+        padding-top: 10px;
+    }
     .title h1 {
         font-size: 3rem;
     }
 
     .loop-line {
-        top: -15rem;
+        padding: 5px;
+        align-items: end;
+        position: absolute;
+        top: 200px;
     }
 
     .initial {
         font-size: 1.8rem;
     }
+    section{
+        min-height:  fit-content !important;
+    }
+
 }
