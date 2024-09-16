@@ -8,6 +8,7 @@ section {
     >ul, .li {
         text-decoration: none;
     }
+    margin-top: 2rem;
 }
 
 div {
@@ -16,9 +17,23 @@ div {
     align-items: baseline;
     width: 100%;
     white-space: normal;
+    word-break: normal;
     overflow-wrap: break-word;
     text-align: justify;
-    padding: .8rem .8rem;
+    hyphens: auto;
+    padding: 1rem 1rem;
+}
+
+.imprint {
+    display: contents;
+    text-align: center;
+    >p {
+        text-align: center;
+    }
+    >h2 {
+        display: flex;
+        text-align: center;
+    }
 }
 
 .policyText {
@@ -26,18 +41,17 @@ div {
     align-items: center;
 }
 
-.title {
-    // text-align: center;
-}
-h2, p {
+h2, p, a {
     color: white;
     text-decoration: none;
 }
 
-ul {
+ul, li, p {
     overflow-wrap: break-word;
+    word-break: break-word;
     text-align: justify;
     width: 100%;
+    hyphens: auto;
 }
 
 .back-btn {
