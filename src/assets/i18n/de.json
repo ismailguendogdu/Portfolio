@@ -56,7 +56,8 @@
         "title": "Impressum",
         "phone": "Telefon",
         "source": "Quelle",
-        "view": "Hier ansehen"
+        "view": "Hier ansehen",
+        "back": "Zurück zur Hauptseite"
     },
 
     "footer": {

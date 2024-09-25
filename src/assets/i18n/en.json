@@ -56,7 +56,8 @@
         "title": "Imprint",
         "phone": "Mobile",
         "source": "Source",
-        "view": "View here"
+        "view": "View here",
+        "back": "Back to the main page"
     },
 
     "footer": {
