@@ -50,5 +50,16 @@
         "policyText2": "privacy policy",
         "policyText3": "and agree to the processing of my data as outlined.",
         "btnText": "Say Hello :)"
+    },
+
+    "impressum": {
+        "title": "Imprint",
+        "phone": "Mobile",
+        "source": "Source",
+        "view": "View here"
+    },
+
+    "footer": {
+        "imprint": "Imprint"
     }
 }

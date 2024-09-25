@@ -1,17 +1,17 @@
 <section>
 <div class="imprint">
-  <h2>Impressum</h2>
+  <h2>{{ "impressum.title" | translate }}</h2>
   <p>
     Ismail Gündogdu<br />
     Fernewaldstr. 33<br />46119 Oberhausen
   </p>
   <p>
-    Telefon: 0173 4857754<br />
+    {{ "impressum.phone" | translate }}: 0173 4857754<br />
     E-Mail:
     <a href="mailto:info@ismail-guendogdu.de">info&commat;ismail-guendogdu.de</a
     ><br />
   </p>
-  <p>Quelle: <a href="https://www.juraforum.de">Hier ansehen >></a></p>
+  <p>{{ "impressum.source" | translate }}: <a href="https://www.juraforum.de">{{ "impressum.view" | translate }} >></a></p>
 
   <button class="back-btn " (click)="goToHome()">Zurück zur Hauptseite</button>
   </div>

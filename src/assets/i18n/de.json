@@ -50,5 +50,17 @@
         "policyText2": "Datenschutzbestimmungen",
         "policyText3": "gelesen und stimme der Verarbeitung meiner Daten wie beschrieben zu.",
         "btnText": "Sag Hallo :)"
+    },
+
+    "impressum": {
+        "title": "Impressum",
+        "phone": "Telefon",
+        "source": "Quelle",
+        "view": "Hier ansehen"
+    },
+
+    "footer": {
+        "imprint": "Impressum"
     }
+
 }

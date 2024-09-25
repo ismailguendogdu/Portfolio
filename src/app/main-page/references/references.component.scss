@@ -150,4 +150,8 @@ section {
     h1 {
       margin-bottom: 2rem;
     }
+
+    .slideshow-container .carousel-slide:nth-child(1) {
+      padding: 0 22px;
+    }
   }

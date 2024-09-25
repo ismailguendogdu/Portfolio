@@ -28,7 +28,7 @@ export class ProjectsComponent {
         {imageUrl:'./assets/img/iconOJavascript.png',title:'Javascript'}
        ],
        githubUrl:'https://github.com/ismailguendogdu/Join',
-        liveUrl:'https://github.com/ismailguendogdu/Join'
+        liveUrl:'https://join.ismail-guendogdu.de'
       },
     {id:'02',
       imageUrl:'./assets/img/elPopup.png',
@@ -43,7 +43,7 @@ export class ProjectsComponent {
         {imageUrl:'./assets/img/iconOJavascript.png',title:'Javascript'}
       ],
       githubUrl:'https://github.com/ismailguendogdu/El-Pollo-Locco',
-      liveUrl:'https://github.com/ismailguendogdu/El-Pollo-Locco'
+      liveUrl:'https://pollo-locco.ismail-guendogdu.de'
     }
   ];
   selectedProject: Project | null = null;
